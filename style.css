@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+h2 {
+     font-size: 3rem;
+     font-weight: bold;
+     margin-bottom: 2rem;
+}
+
+.coming-soon {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.countdown {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.day,.hour,.minute,.second {
+    font-size: 1.5rem; 
+}
+
+.waiting {
+    height: 50vh;
+}
+
+.settings {
+    text-align: center;
+    position: absolute;
+    right: 10px;
+    top: 15px;
+    background-color: white;
+    padding: 0px 10px 10px 10px;
+    border-radius: 15px;
+}
+
+.settings-icon {
+    cursor: pointer;
+    transition: .3s ease-in-out;
+}
+
+.settings-icon:hover {
+    color: #00C1D4;
+}
+
+.form-container {
+    margin-top: 10px;
+}
+
+.form-containers {
+    max-height: 0px;
+    overflow: hidden;
+    transition: .5s ease-in-out;
+}
+
+.form-containers-active {
+    max-height: 70vh;
+}
+
+.settings input {
+    width: 80px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    font-weight: 700;
+    
+}
+
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+  }
+
+#stop {
+    color: rgb(243, 185, 26);
+    max-height: 0px;
+    cursor: pointer;
+    transition: .5s ease-in-out;
+    overflow: hidden;
+}
+
+.active-stop {
+    max-height: 100px !important;
+}
